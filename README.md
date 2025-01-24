@@ -1,7 +1,8 @@
-"""
-clone
+# Installation
 
-docker build.
-
-¯\_(ツ)_/¯
-"""
+Clone repo & build:
+```bash
+git clone <repo-url>
+docker build .
+```
+¯_(ツ)_/¯

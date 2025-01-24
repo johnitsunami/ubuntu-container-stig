@@ -1,0 +1,9 @@
+---
+
+- name: Run Ubuntu20-stig remediation role
+  hosts: all
+  any_errors_fatal: no
+  become: true
+
+  roles:
+      - role: "{{ playbook_dir }}"

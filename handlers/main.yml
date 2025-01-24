@@ -18,6 +18,13 @@
   ansible.builtin.service:
       name: chrony
       state: restarted
+      
+- name: restart sshd
+  ansible.builtin.service:
+      name: sshd
+      state: restarted
+  when:
+      - "'openssh-server' in ansible_facts.packages"
 
 - name: auditd_immutable_check
   ansible.builtin.shell: grep -c "^-e 2" /etc/audit/rules.d/99_auditd.rules

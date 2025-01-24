@@ -1,5 +1,5 @@
 clone
 
-docker build .
+docker build.
 
 ¯\_(ツ)_/¯
